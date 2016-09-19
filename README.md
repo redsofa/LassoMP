@@ -1,24 +1,21 @@
 # LassoMP
 
 Software Description
-
+====================
 
 
 Source code used for simulation and case studies are described in the followings. 
 
-1.	Simulation
-
-
+* Simulation
 
 The simulation data was generated using the Matlab code in MMT (http://www.ece.ubc.ca/~xiaohuic/code/multi-task_lasso/multi-task_lasso.htm). Thirty datasets in each of four experimental settings: the number of predictors X =100 and X=500, and the number of responses Y=10 and Y-20 were generated using simuData in MMT. The number of samples is set as 50. In total, 120 datasets(X, Y, and the covariate matrix B) used in the simulation can be found in ./data/simu. 
 
-SimuLoop  compare eight multivariate models
+SimuLoop - compare eight multivariate models
 
 glmnet(https://cran.r-project.org/web/packages/glmnet/index.html) and FMPR R packages(https://github.com/gabraham/FMPR) were used in simulation. LassoM, LassoMP, RidgeM, RidgeMP, elasticM, and elasticMP are implemented in glmnet. FMPR and GFLasso are implemented in FMPR.  The comparison of these eight algorithms is provided in SimuLoop.R. Figure 1 is also generated.
 
 
-
-SimuTime  compare the computational time of eight multivariate models
+SimuTime - compare the computational time of eight multivariate models
 
 SimuTime was used for comparing the average computational time of eight algorithms (FMPR, GFLasso, RidgeM, RidgeMP, elasticM, elasticMP, LassoM and LassoMP) in four experimental settings.
 
@@ -28,9 +25,7 @@ SimuPenalty is used for comparing the influence of the penalty factor on LassoMP
 
 
 
-2.	Case studies
-
-
+*	Case studies
 
 Case study 1: Genotype and gene expression data were downloaded from http://www.genenetwork.org/. Genotype data and three gene modules data are available from ./data/StMx folder. 
 
@@ -47,5 +42,5 @@ LassoM_LassoMPs.R is used to compare LassoM, LassoMs, LassoMP, LassoMPs in case 
 
 
 References:
-
+===========
 Moscou, M.J., Lauter, N., Ste_enson, B., Wise, R.P.: Quantitative and qualitative stem rust resistance factors in barley are associated with transcriptional suppression of defense regulons. PLoS Genet 7(7), 1-17 (2011) (http://journals.plos.org/plosgenetics/article?id=10.1371%2Fjournal.pgen.1002208)
